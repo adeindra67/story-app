@@ -1,0 +1,125 @@
+/* =================================
+   ABOUT PAGE STYLES
+   ================================= */
+
+.about-hero {
+  background: linear-gradient(to right, rgba(52, 152, 219, 0.1), rgba(44, 62, 80, 0.1));
+  padding-block: 50px;
+  text-align: center;
+}
+
+.about-hero__title {
+  color: var(--secondary-color);
+}
+
+.about-hero__subtitle {
+  font-size: 1.2rem;
+  color: var(--text-secondary-color);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.mission-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.mission-text {
+  max-width: 65ch; 
+  line-height: 1.8;
+}
+
+.mission-text p {
+  margin-bottom: 1em;
+}
+
+.mission-image {
+  max-width: 300px;
+}
+
+.mission-image img {
+  width: 100%;
+  height: auto;
+}
+
+.how-it-works {
+  background-color: var(--surface-color);
+}
+
+.steps-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.step-item {
+  position: relative;
+  padding: 20px;
+  padding-left: 50px;
+}
+
+.step-number {
+  position: absolute;
+  left: 0;
+  top: 15px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  opacity: 0.5;
+}
+
+.step-title {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  margin-bottom: 0.5em;
+}
+
+.from-developer {
+  text-align: center;
+}
+
+.developer-note {
+  max-width: 60ch;
+  margin: 0 auto 1em auto;
+  font-style: italic;
+  color: var(--text-secondary-color);
+}
+
+.developer-name {
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+/* Tampilan untuk layar yang lebih besar */
+@media screen and (min-width: 768px) {
+  .mission-content {
+    flex-direction: row;
+    gap: 50px;
+  }
+  .mission-text {
+    flex: 1.5;
+    text-align: left;
+  }
+  .mission-image {
+    flex: 1;
+    max-width: 350px;
+  }
+  .steps-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .step-item {
+    padding: 20px;
+  }
+  .step-number {
+    position: static;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+  }
+  .step-item {
+    text-align: center;
+  }
+}
